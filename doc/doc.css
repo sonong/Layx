@@ -1,21 +1,5 @@
-﻿::-webkit-input-placeholder {
-    text-overflow: ellipsis
-}
-
-::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-    overflow: auto
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #dedede;
-    min-height: 25px;
-    min-width: 25px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+﻿ul {
+    padding-left: 20px;
 }
 
 #demo {
@@ -133,6 +117,8 @@
     position: relative;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0,0,0);
+    font-size: 14px;
 }
 
 .tip {
@@ -156,7 +142,8 @@ pre {
     display: block;
     /*white-space: pre-wrap;
     word-wrap: break-word;*/
-    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0,0,0);
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -206,6 +193,20 @@ pre {
 
 .custom-button:hover {
     background: rgba(0, 148, 255,0.8) !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.custom-button1 {
+    color: #fff;
+    background: #FFB800;
+    border: none;
+    float: left;
+    margin-left: 0;
+}
+
+.custom-button1:hover {
+    background: rgba(255, 184, 0,0.8) !important;
     border: none !important;
     color: #fff !important;
 }
